@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/banking
+    username: postgres
+    password: Ilqar!@#$%
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+  liquibase:
+    change-log: classpath:db/liquibase/changelog-master.yml
