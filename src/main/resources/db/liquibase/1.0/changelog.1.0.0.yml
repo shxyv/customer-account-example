@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: Created Customer table
+      author: Ilgar Shikhiyev
+      changes:
+        - createTable:
+            tableName: customers
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: full_name
+                  type: varchar(256)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
